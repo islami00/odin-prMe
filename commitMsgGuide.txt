@@ -31,3 +31,6 @@
 #Resolves: #123
 #See also: #456, #789
 ###
+
+# source: https://chris.beams.io/posts/git-commit/
+# see also: https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration
