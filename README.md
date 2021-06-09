@@ -1,5 +1,5 @@
 # odin-prMe  
-This is for the content I will be making on the odin project as i progress  
+This is for odin-projects  
 
 # workflow explained  
   
