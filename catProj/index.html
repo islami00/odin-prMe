@@ -5,40 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat photo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <h1>CatPhotoApp</h1>
-    <p>
-        Click here to view more <a href="#">cat photos</a>
-    </p>
-    <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="Cute brown cat on it's back"></a>
-    <p>
-        Things cat love
-    </p>
-    <ul>
-        <li>Cat nip</li>
-        <li>Laser pointers</li>
-        <li>Lasagna</li>
-    </ul>
-    <p>
-        Top three things cats hate:
-    </p>
-    <ol>
-        <li>Flea treatment</li>
-        <li>Thunder</li>
-        <li>Other cats</li>
-    </ol>
+    <h1 class="red-text">CatPhotoApp</h1>
+    <main>
+        <p class="red-text">
+            Click here to view more <a href="#">cat photos</a>
+        </p>
+        <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="Cute brown cat on it's back"></a>
+        <div>
+            <p>
+                Things cat love
+            </p>
+            <ul>
+                <li>Cat nip</li>
+                <li>Laser pointers</li>
+                <li>Lasagna</li>
+            </ul>
+            <p>
+                Top three things cats hate:
+            </p>
+            <ol>
+                <li>Flea treatment</li>
+                <li>Thunder</li>
+                <li>Other cats</li>
+            </ol>
+        </div>
 
-    <form action="https://freecatphotoapp.com/submit-cat-photo">
-        <label><input id="Indoor" type="radio" value="Indoor" name="indoor-outdoor" checked>Indoor</label>
-        <label><input id="Outdoor" type="radio" value="Indoor" name="indoor-outdoor">Outdoor</label>
-        <br>
-        <label><input type="checkbox" name="personality"  value="Loving" checked>Loving</label>
-        <label><input type="checkbox" name="personality" value="Lazy">Lazy</label>
-        <label><input type="checkbox" name="personality" value="Energetic">Energetic</label>
-        <br>
-        <label for="search-cat"><input type="text" id="search-cat" placeholder="Cat photo URL"></label>
-        <button type="submit">Submit</button>
-    </form>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+            <label><input id="Indoor" type="radio" value="Indoor" name="indoor-outdoor" checked>Indoor</label>
+            <label><input id="Outdoor" type="radio" value="Indoor" name="indoor-outdoor">Outdoor</label>
+            <br>
+            <label><input type="checkbox" name="personality"  value="Loving" checked>Loving</label>
+            <label><input type="checkbox" name="personality" value="Lazy">Lazy</label>
+            <label><input type="checkbox" name="personality" value="Energetic">Energetic</label>
+            <br>
+            <label for="search-cat"><input type="text" id="search-cat" placeholder="Cat photo URL" required></label>
+            <button type="submit">Submit</button>
+        </form>  
+    </main>
+
 </body>
 </html>
