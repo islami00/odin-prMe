@@ -1,3 +1,11 @@
+**Follows catProj**
+#Idea:
+  
+I'll be working like this from now on:  
+each md will contain the tutorial for that commit, and I'll make changes if inspired by the tutorial to the cat photo app till it's complete, then I'll merge and do the current project.
+
+Each md will follow a specific or multiple projects at top
+
 Note:
 
 1. Margin and padding can cause css elements to resize
