@@ -19,10 +19,26 @@ Learned not qn:
 
 1. Margin only applies relative to other children in the same stacking context.
 
-I.e In a div with two children , any margin applied will not be relative to space from the parent in other words; if there is no other child at the very bottom of the parent, the margin will not cause a resize in the case of a parent whose length isn't specified
+   I.e In a div with two children , any margin applied will not be relative to space from the parent in other words; if there is no other child at the very bottom of the parent, the margin will not cause a resize in the case of a parent whose length isn't specified
 
 tldr; any extra margin beyond the limits of a parent will not cause resize in a direction (such as down) as long as no other children exist there.
 
 I.e to make the margin work like that, always add some content: padding for parent.
 
-2. Negative margin causes the opposite of that, in resizing, the parent starts to ignore the other children even allowing them to overflow, i.e Fulfilling the condition for the negative margin (bring me closer to him!)
+2. Negative margin causes the opposite of that, in resizing, the parent starts to ignore the other children even allowing them to overflow, i.e Fulfilling the condition for the negative margin (bring me closer to him!)  
+
+##CSS INHERITANCE
+
+Children inherit CSS rules like color and font-family from their parents;
+Could go from root element to children too.
+
+##Special selectors  
+
+there is an attribute selector: [attr="Value"]
+
+##Length units
+
+1. in isn't consistent over screens as it renders differently.
+2. Em is relative to element font size, unless font-size itself is em then it is relative to parent
+3. Rem is relative to root element (could be parent)
+
