@@ -1,18 +1,31 @@
 :root{
   --main-width: 305px;
   --background: wheat;
-  --text-back : rgb(94, 81, 81);
+  --header-back : rgb(94, 81, 81);
   --txt : rgb(223, 189, 115); 
   --roundedness : 15px;
   --cont-space: 10px;
   --img-borcol: rgba(136, 81, 49, 0.836);
-  --headersFont: Lobster, monospace;
-  --innersFont : 'Segoe UI';
+  --headersFont: Lobster, "cursive", monospace;
+  --innersFont : Poppins,"sans serif";
 }
 
+body{
+  background-color: var(--background);
+}
 header{
   width: calc(var(--main-width) + 28px);
 }
+
+h2 {
+  font-family: var(--headersFont);
+  background-color: var(--header-back);
+  width: 100%;
+  padding: var(--cont-space);
+  border-radius: var(--roundedness);
+  text-align: center;
+}
+
 main{
   border-style: solid;
   border-radius: var(--roundedness);
@@ -24,18 +37,15 @@ main{
 img{
   border-style: solid;
   border-width: 10px;
-  border-color: rgba(136, 81, 49, 0.836);
+  border-color: var(--img-borcol);
   border-radius: var(--roundedness);
 }
 
-body{
-  background-color: var(--background);
-  
-}
-
-.red-text{
+.title-text{
   color: var(--txt);
 }
+
+
 form{
   background-color: beige;
   width: fit-content ;
@@ -44,20 +54,12 @@ form{
   border-radius: var(--roundedness);
   font-family: var(--innersFont);
 }
-  h2 {
-    font-family: var(--headersFont);
-    background-color: var(--text-back);
-    width: 100%;
-    padding: var(--cont-space);
-    border-radius: var(--roundedness);
-    text-align: center;
-  }
 
   p {
     color: var(--txt);
     font-size: 16px;
     font-family: var(--headersFont);
-    background-color: var(--text-back);
+    background-color: var(--header-back);
     width: fit-content;
     border-radius: var(--roundedness);
     padding: calc(var(--cont-space) - 4px);
@@ -72,6 +74,5 @@ form{
   
   a{
     text-decoration: none;
+    color: rgb(98, 238, 238);
   }
-  
-

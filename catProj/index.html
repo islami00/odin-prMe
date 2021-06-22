@@ -7,19 +7,22 @@
     <title>Cat photo App</title>
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
-    <h2 class="red-text">CatPhotoApp</h2>
+    <h2 class="title-text">CatPhotoApp</h2>
 </header>
     <main>
-        <p class="red-text">
+        <p class="title-text">
             Click here to view more <a href="#">cat photos</a>
         </p>
         <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="Cute brown cat on it's back"></a>
-        <div>
+        <section>
             <p>
-                Things cat love
+                Things cat love:
             </p>
             <ul>
                 <li>Cat nip</li>
@@ -34,15 +37,15 @@
                 <li>Thunder</li>
                 <li>Other cats</li>
             </ol>
-        </div>
+        </section>
 
-        <form action="https://freecatphotoapp.com/submit-cat-photo">
-            <label><input id="Indoor" type="radio" value="Indoor" name="indoor-outdoor" checked>Indoor</label>
-            <label><input id="Outdoor" type="radio" value="Indoor" name="indoor-outdoor">Outdoor</label>
+        <form action="GET">
+            <label><input id="Indoor" type="radio" value="indoor" name="indoor-outdoor" checked>Indoor</label>
+            <label><input id="Outdoor" type="radio" value="outdoor" name="indoor-outdoor">Outdoor</label>
             <br>
-            <label><input type="checkbox" name="personality"  value="Loving" checked>Loving</label>
-            <label><input type="checkbox" name="personality" value="Lazy">Lazy</label>
-            <label><input type="checkbox" name="personality" value="Energetic">Energetic</label>
+            <label><input type="checkbox" name="personality"  value="loving" checked>Loving</label>
+            <label><input type="checkbox" name="personality" value="lazy">Lazy</label>
+            <label><input type="checkbox" name="personality" value="energetic">Energetic</label>
             <br>
             <label for="search-cat"><input type="text" id="search-cat" placeholder="Cat photo URL" required></label>
             <button type="submit">Submit</button>
