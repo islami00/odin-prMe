@@ -50,3 +50,6 @@ Note: Offset x goes from left to right (count positive like canvas), and offset 
   
 At this point, I am starting the card proj. Merging cat .
 
+##What i learned setting up the card:
+1. Padding, margin are really useful. They literally control space intrinsically. before creating a class div, try setting padding if you just want some space between your content and the container, or margin on the content itself
+2. Padding and margin add or subtract from each other, at least as you code it. If the parent has padding than the margin value then the space increases (which may make the child shrink or overflow), otherwise it decreases (vice/versa).
