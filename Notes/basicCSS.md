@@ -1,5 +1,5 @@
 **Follows catProj**
-#Idea:
+# Idea:
   
 I'll be working like this from now on:  
 each md will contain the tutorial for that commit, and I'll make changes if inspired by the tutorial to the cat photo app till it's complete, then I'll merge and do the current project.
@@ -35,22 +35,22 @@ I.e to make the margin work like that, always add some content: padding for pare
 
 2. Negative margin causes the opposite of that, in resizing, the parent starts to ignore the other children even allowing them to overflow, i.e Fulfilling the condition for the negative margin (bring me closer to him!)  
 
-##CSS INHERITANCE
+## CSS INHERITANCE
 
 Children inherit CSS rules like color and font-family from their parents;
 Could go from root element to children too.
 
-##Special selectors  
+## Special selectors  
 
 there is an attribute selector: [attr="Value"]
 
-##Length units
+## Length units
 
 1. in isn't consistent over screens as it renders differently.
 2. Em is relative to element font size, unless font-size itself is em then it is relative to parent
 3. Rem is relative to root element (could be parent)
 
-##CSS precedence
+## CSS precedence
 before these specific declaration types, note that inlines > internal styles > external, and when in conflict browser reads them top to bottom
 1. Class selectors attributes override inherited attributes from parents
 2. class selectors override each other by declaration, last takes highest precedence
@@ -60,10 +60,10 @@ Lastly, !important overrides all other styles syntax:
 declaration !important;
 ```
 
-##Colors
+## Colors
 Hex shorthand: RRGGBB - RGB
 
-##CSS VARIABLES
+## CSS VARIABLES
 Declare and use:
 ```CSS 
 selector{
@@ -72,7 +72,7 @@ width: var(--var-name)
 }
 
 ```
-###Fallback values
+### Fallback values
 These are variable values that are used in case the variable cannot be found (just for that reason, it doesn't increase browser compatibility)
 
 ```CSS 
@@ -83,7 +83,7 @@ width: var(--var-name, fallbackvalue)
 
 ```
 
-##Browser fallbacks
+## Browser fallbacks
 These are used for browser compatibility  
 After using something not so widely supported like a css variable as value, make sure to put a declaration before it with css that is widely supported for older browsers to fallbackto instead of mess things up with default styles (I'm looking at you IE) and let newer browsers take up the new style later in the cascade
 
@@ -100,7 +100,7 @@ e.g: note how root was used to set variables, this links to variable inheritance
     width:200px;
   }
 ```
-##Variable inheritance
+## Variable inheritance
 Variables are inherited like regular properties, (parent to descendent), hence why they are set on root for "global-like" behavior. Root is usually html tag. i.e root element of document
 
 Due to this, we can set new, specific values for our globals like blockscoping without changing the actual global variable. Nice.

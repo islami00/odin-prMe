@@ -1,0 +1,35 @@
+    /* I noticed how good the teal fit in the design so I decided to make the borders cornered to remind me of that soft feel*/
+    :root{
+        font-family: poppins, Arial, Helvetica, sans-serif;
+    }
+    body {
+        background-color: white;
+      }
+      header {
+        background-color: #09A7A1;
+        color: white;
+        padding: 0.25em;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #09A7A1;
+      }
+      h2 {
+        color: #09A7A1;;
+      }
+      button {
+        background-color: #FF790E;
+         border-radius: 5px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #FF790E;
+      }
+      footer {
+        background-color: #09A7A1;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #09A7A1;
+        color: white;
+        padding: 0.5em;
+      }
