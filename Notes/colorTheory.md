@@ -26,7 +26,7 @@ Computer monitors and device screens create different colors by combining amount
 
 Tertiary colors are the result of combining a primary color with one of its secondary color neighbors. For example, within the RGB color model, red (primary) and yellow (secondary) make orange (tertiary). This adds six more colors to a simple color wheel for a total of twelve.
 
-There are various methods of selecting different colors that result in a harmonious combination in design. One example that can use tertiary colors is called the split-complementary color scheme. This scheme starts with a base color, then pairs it with the two colors that are adjacent to its complement. The three colors provide strong visual contrast in a design, but are more subtle than using two complementary colors.
+There are various methods of selecting different colors that result in a harmonious combination in design. One example that can use tertiary colors is called the `split-complementary` color scheme. This scheme starts with a base color, then pairs it with the two colors that are adjacent to its complement. The three colors provide strong visual contrast in a design, but are more subtle than using two complementary colors.
 
 Here are three colors created using the split-complement scheme:
 
@@ -43,3 +43,31 @@ The Complementary Colors challenge showed that opposite colors on the color whee
 ---
 
 This page will use a shade of teal (`#09A7A1`) as the dominant color, and its orange (`#FF790E`) complement to visually highlight the sign-up buttons. Change the `background-color` of both the `header` and `footer` from black to the teal color. Then change the `h2` text color to teal as well. Finally, change the `background-color` of the `button` to the orange color.
+
+found [this](https://www.canva.com/colors/color-wheel/) for color theory on pages
+
+# HSL scheme - the color triangle
+
+Colors have several characteristics including hue, saturation, and lightness. CSS3 introduced the hsl() property as an alternative way to pick a color by directly stating these characteristics.
+
+Hue is what people generally think of as 'color'. If you picture a spectrum of colors starting with red on the left, moving through green in the middle, and blue on right, the hue is where a color fits along this line. In hsl(), hue uses a color wheel concept instead of the spectrum, where the angle of the color on the circle is given as a value between 0 and 360.
+
+Saturation is the amount of gray in a color. A fully saturated color has no gray in it, and a minimally saturated color is almost completely gray. This is given as a percentage with 100% being fully saturated.
+
+Lightness is the amount of white or black in a color. A percentage is given ranging from 0% (black) to 100% (white), where 50% is the normal color.
+
+# Color mixins
+
+The hsl() option in CSS also makes it easy to adjust the tone of a color. Mixing white with a pure hue creates a tint of that color, and adding black will make a shade. Alternatively, a tone is produced by adding gray or by both tinting and shading. Recall that the 's' and 'l' of hsl() stand for saturation and lightness, respectively. The saturation percent changes the amount of gray and the lightness percent determines how much white or black is in the color. This is useful when you have a base hue you like, but need different variations of it.
+
+## Caveat on tints
+
+In color theory, a tint is a mixture of a color with white, which increases lightness, while a shade is a mixture with black, which increases darkness. Both processes affect the resulting color mixture's relative saturation. A tone is produced either by mixing a color with grey, or by both tinting and shading.
+
+[source](https://en.wikipedia.org/wiki/Tints_and_shades)
+
+Yay! I can apply this to menus to avoid having to chose completely different color!
+
+Yup, Definintely applied hsl to the website.
+
+1. Note: for the h1 to scale well with the nav, or center well, make sure padding top is same as h1 default margin
