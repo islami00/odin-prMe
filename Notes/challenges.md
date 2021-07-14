@@ -79,3 +79,8 @@ To animate an element, you need to know about the animation properties and the `
 `animation-duration` sets the length of time for the animation.
 
 `@keyframes` is how to specify exactly what happens within the animation over the duration. This is done by giving CSS properties for specific "frames" during the animation, with percentages ranging from 0% to 100%. If you compare this to a movie, the CSS properties for 0% is how the element displays in the opening scene. The CSS properties for 100% is how the element appears at the end, right before the credits roll. Then CSS applies the magic to transition the element over the given duration to act out the scene.
+
+### Me
+The two main superpowers in animation are animations and transforms
+animations are temporary (i.e you apply the animation and the element remains as it was after the duration, so you can be creative)
+Transforms are basically ways of introducing changes but they can be covered later.
