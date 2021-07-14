@@ -5,12 +5,11 @@ Color theory is a deep rabbit hole.
 Here are the levels:
 
 1. [entry point](https://www.freecodecamp.org/learn/responsive-web-design/applied-visual-design/learn-about-complementary-colors)
-   1. White isn't a color?? [formal entry point](https://en.wikipedia.org/wiki/Color_model) 
+   1. White isn't a color?? [formal entry point](https://en.wikipedia.org/wiki/Color_model)
       1. [sacre math!](https://en.wikipedia.org/wiki/Kruithof_curve)
 
-
-
 # Level one
+
 Color theory and its impact on design is a deep topic and only the basics are covered in the following challenges. On a website, color can draw attention to content, evoke emotions, or create visual harmony. Using different combinations of colors can really change the look of a website, and a lot of thought can go into picking a color palette that works with your content.
 
 The color wheel is a useful tool to visualize how colors relate to each other - it's a circle where similar hues are neighbors and different hues are farther apart. When two colors are opposite each other on the wheel, they are called complementary colors. They have the characteristic that if they are combined, they "cancel" each other out and create a gray color. However, when placed side-by-side, these colors appear more vibrant and produce a strong visual contrast.
@@ -18,7 +17,6 @@ The color wheel is a useful tool to visualize how colors relate to each other - 
 This is different than the outdated RYB color model that many of us were taught in school, which has different primary and complementary colors. Modern color theory uses the additive RGB model (like on a computer screen) and the subtractive CMY(K) model (like in printing).
 
 Note: Using color can be a powerful way to add visual interest to a page. However, color alone should not be used as the only way to convey important information because users with visual impairments may not understand that content. This issue will be covered in more detail in the Applied Accessibility challenges.
-
 
 # Tertiary colors
 
@@ -30,11 +28,11 @@ There are various methods of selecting different colors that result in a harmoni
 
 Here are three colors created using the split-complement scheme:
 
-|   Color   	| Hex Code 	|
-|:---------:	|:--------:	|
-|   orange  	|  #FF7F00 	|
-|    cyan   	|  #00FFFF 	|
-| raspberry 	|  #FF007F 	|
+|   Color   | Hex Code |
+| :-------: | :------: |
+|  orange   | #FF7F00  |
+|   cyan    | #00FFFF  |
+| raspberry | #FF007F  |
 
 ## The color theory styled page
 
@@ -71,3 +69,55 @@ Yay! I can apply this to menus to avoid having to chose completely different col
 Yup, Definintely applied hsl to the website.
 
 1. Note: for the h1 to scale well with the nav, or center well, make sure padding top is same as h1 default margin
+
+# Gradients!
+
+Applying a color on HTML elements is not limited to one flat hue. CSS provides the ability to use color transitions, otherwise known as gradients, on elements. This is accessed through the background property's linear-gradient() function. Here is the general syntax:
+
+```CSS
+
+background: linear-gradient(gradient_direction, color 1, color 2, color 3, ...);
+
+```
+
+The first argument specifies the direction from which color transition starts - it can be stated as a degree, where `90deg` makes a horizontal gradient (from left to right) and `45deg` makes a diagonal gradient (from bottom left to top right). The following arguments specify the order of colors used in the gradient.
+
+```CSS
+background: linear-gradient(35deg, #CCFFFF,#FFCCCC);
+```
+
+That specific code creates a really nice soft transition color
+
+## Repeated gradients??
+
+The `repeating-linear-gradient()` function is very similar to `linear-gradient()` with the major difference that it repeats the specified gradient pattern. `repeating-linear-gradient()` accepts a variety of values, but for simplicity, you'll work with an angle value and color stop values in this challenge.
+
+The angle value is the direction of the gradient. Color stops are like width values that mark where a transition takes place, and are given with a percentage or a number of pixels.
+
+In the example demonstrated in the code editor, the gradient starts with the color yellow at 0 pixels which blends into the second color blue at 40 pixels away from the start. Since the next color stop is also at 40 pixels, the gradient immediately changes to the third color green, which itself blends into the fourth color value red as that is 80 pixels away from the beginning of the gradient.
+
+For this example, it helps to think about the color stops as pairs where every two colors blend together.
+
+`0px [yellow -- blend -- blue] 40px [green -- blend -- red] 80px`
+If every two color stop values are the same color, the blending isn't noticeable because it's between the same color, followed by a hard transition to the next color, so you end up with stripes.
+
+# Background
+
+add backgrounds. Use url("urlHere") to add nice subtle patterns to sites
+
+# Transforms!~
+
+1. Scale using `transform : scale(No.)`
+
+## On state: the keyword here is "state"
+
+The transform property has a variety of functions that let you scale, move, rotate, skew, etc., your elements. When used with pseudo-classes such as :hover that specify a certain state of an element, the transform property can easily add interactivity to your elements.
+**Note**: Applying a transform to a div element will also affect any child elements contained in the div.
+
+2. Pseudo-class: `:hover`
+   1. This is really nice for a button effect - just scaling!. Can be acheived with js. a good note for `react states`
+3. Skewing:
+   1. `transform: skewX(ndeg)` basically shear an element by some angle - i.e the element shifts horizontally but stays still vertically
+   2. `transform: skewY(ndeg)` this shears along vertical and element still stays in somewhat same positions horizontally
+
+Challenges~
