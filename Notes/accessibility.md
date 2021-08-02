@@ -112,11 +112,11 @@ Note: Some online color picking tools include visual simulations of how colors a
 ## ScreenReaders and links
 
 They could ask for a pagesummary which may only include links
-*Use descriptive link text*
-## AccessKey for shortcuts 
+_Use descriptive link text_
+
+## AccessKey for shortcuts
 
 `accesskey` attribute can be applied to any html element to bind it to a keyboard function. (Thinking what I'm thinking?)
-
 
 ## Keyboard focus
 
