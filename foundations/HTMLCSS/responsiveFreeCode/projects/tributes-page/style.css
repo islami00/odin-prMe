@@ -101,6 +101,7 @@ a {
 
 a:hover {
   /* Transition here better */
+  background-color: yellow;
 }
 
 @media (max-width: 1024px) {
