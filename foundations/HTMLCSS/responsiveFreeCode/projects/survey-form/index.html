@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
+    <!-- <script src="surveyresp.ts"></script> -->
+    <title>Survey form</title>
+  </head>
+  <body>
+    <article class="survey">
+      <header class="title">
+        <h1 id="title">Fate/Zero servant audience poll</h1>
+        <p id="description">for fans of the anime</p>
+      </header>
+      <!-- prettier-ignore -->
+
+      <form action="" class="survey-form" method="POST" id="survey-form">
+        
+            <label for="name" id="name-label">Name:<input type="text" name="response-name"id="name" required placeholder="Do Enter your Name"/></label>
+
+            <label for="email" id="email-label">Email:<input type="email" name="response-email" id="email" required placeholder="Enter Your email"/></label>
+
+            <label for="number" id="number-label">Rate Gilgamesh on a scale of 1-10 <input type="number" name="response-gilga-rating" id="number" min="1" max="10" list="numbers" placeholder="Rating"/></label>
+
+            <label for="dropdown">Who is your favorite servant from fate/zero?
+            <select name="servant" id="dropdown">
+                <option value="Archer">Archer</option>
+                <option value="Saber">Saber</option>
+                <option value="Lancer">Lancer</option>
+                <option value="Caster">Caster</option>
+                <option value="Berserker">Berserker</option>
+                <option value="Assassin">Assassin</option>
+                <option value="Rider">Rider</option>
+            </select>
+            </label>
+
+            <fieldset>  
+            <legend>Do you like kiritsugu?</legend>
+            <label for="hero-1">Yes<input type="radio" name="hero-kiritsugu" id="hero-1" value="yes" /></label>
+            <label for="hero-0">No <input type="radio" name="hero-kiritsugu" id="hero-0" value="no" /></label>
+            </fieldset>
+        
+            <fieldset>
+            <legend>What of kotomine? Like him??</legend>
+            <label for="hero-1">Yes<input type="radio" name="hero-kotomine" id="hero-1" value="yes"></label>
+            <label for="hero-0">No<input type="radio" name="hero-kotomine" id="hero-0" value="no" /></label>
+            </fieldset>
+
+            <!-- prittier-ignore -->
+            <fieldset>
+            <legend>Which of these had a valid reason for seeking the grail?</legend>
+            <label for="g1">Kotomine<input type="checkbox" name="grail-seek" id="g1" value="kotomine"></label>
+            <label for="g2">kiritsugu<input type="checkbox" name="grail-seek" id="g2" value="kiritsugu"></label>
+            <label for="g3">waver velvet<input type="checkbox" name="grail-seek" id="g3" value="waver_velvet"></label>
+            <label for="g4">Ryunosuke Uryu<input type="checkbox" name="grail-seek" id="g4" value="ryunosuke_uryu"></label>
+            <label for="g5">kayneth archibald<input type="checkbox" name="grail-seek" id="g5" value="kayneth_archibald"></label>
+            <label for="g6">tokiomi tohsaka<input type="checkbox" name="grail-seek" id="g6" value="tokiomi_tohsaka"></label>
+            <label for="g7">Kariya Matou<input type="checkbox" name="grail-seek" id="g7" value="kariya_matou"></label>
+            </fieldset>
+
+            <datalist id="numbers" hidden>
+            <option value="1">😒</option>
+            <option value="2">😕</option>
+            <option value="3">🙁</option>
+            <option value="4">🤨</option>
+            <option value="5">😐</option>
+            <option value="6">🙂</option>
+            <option value="7">😀</option>
+            <option value="8">😍</option>
+            <option value="9">🥵</option>
+            <option value="10">🔥</option>
+            </datalist>
+            
+            <textarea name="reason-for-war" id="remark" cols="30" rows="10" placeholder="What do you like about the holy grail war?"></textarea>
+            <button type="submit" id="submit">Submit</button>
+            <!-- Replace default action with onclick fetch, post and collect all data via data- methods -->
+    </form>
+      <!-- Eight input fields in total, eight response items/ Set data collection throughsubmit -->
+    </article>
+  </body>
+</html>
